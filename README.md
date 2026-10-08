@@ -43,3 +43,7 @@ Do not commit private keys, passwords, or active VPN configurations.
 ## Language
 
 All repository content, code comments, commit messages, and pull request descriptions must be written in English.
+
+## Typography
+
+BioRhyme is bundled locally from [Google Fonts](https://github.com/google/fonts/tree/main/ofl/biorhyme) under the SIL Open Font License. See `extension/fonts/OFL.txt`. No external font requests are made.
