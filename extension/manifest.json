@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "LBvpn",
+  "version": "0.1.0",
+  "description": "A monochrome VPN interface prototype. Demo only: browser traffic is not protected.",
+  "action": {
+    "default_title": "LBvpn — Demo",
+    "default_popup": "popup.html"
+  }
+}

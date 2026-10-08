@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LBvpn — Preview</title>
+        <link rel="stylesheet" href="extension/fonts/fonts.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                min-height: 100vh;
+                background: #080808;
+                color: #ededeb;
+                font-family: "BioRhyme", Georgia, serif;
+                display: grid;
+                place-items: center;
+                padding: 40px 12px;
+            }
+            .stage {
+                text-align: center;
+            }
+            .caption {
+                font-size: 10px;
+                letter-spacing: 3px;
+                color: #999;
+                margin: 0 0 24px;
+            }
+            iframe {
+                display: block;
+                width: 362px;
+                height: 590px;
+                max-width: 100%;
+                border: 1px solid #333;
+                border-radius: 12px;
+                background: #101010;
+                box-shadow: 0 24px 80px #0009;
+            }
+            .hint {
+                font-size: 11px;
+                color: #999;
+                margin: 22px 0 0;
+                line-height: 1.7;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="stage">
+            <p class="caption">LBVPN / DESIGN PREVIEW</p>
+            <iframe src="extension/popup.html" title="LBvpn extension preview"></iframe>
+            <p class="hint">An early look at a more private browser.<br />Refresh this page after editing the extension files.</p>
+        </main>
+    </body>
+</html>
