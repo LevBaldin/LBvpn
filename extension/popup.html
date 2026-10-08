@@ -1,24 +1,50 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LBvpn</title>
-  <link rel="stylesheet" href="popup.css">
-  <script src="popup.js" defer></script>
-</head>
-<body>
-  <main class="panel">
-    <header><a class="brand" href="#" aria-label="LBvpn home">LB<span>vpn</span><i></i></a><span class="edition">PRIVATE ACCESS</span></header>
-    <section class="connection" aria-labelledby="status">
-      <div class="orbit" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5 39 11v12c0 10-15 19-15 19S9 33 9 23V11L24 5Z"/><path d="M18 23v-4a6 6 0 0 1 12 0v4M17 23h14v10H17z"/></svg></div>
-      <p class="eyebrow">YOUR CONNECTION</p>
-      <h1 id="status" role="status" aria-live="polite">Disconnected</h1>
-      <p class="description" id="description">A quieter corner of the internet.</p>
-    </section>
-    <section class="location"><label for="location">EXIT LOCATION <span>03 AVAILABLE</span></label><div class="select-wrap"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><select id="location"><option>Germany</option><option>Netherlands</option><option>United States</option></select><span class="chevron" aria-hidden="true">⌄</span></div></section>
-    <button id="connect" type="button"><span id="button-label">Connect</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v8m-5-6a8 8 0 1 0 10 0"/></svg></button>
-    <footer><span class="demo-label">INTERACTIVE PREVIEW</span><p>Demo mode — browser traffic is not protected</p><div class="footer-line"><span>LBVPN / EARLY ACCESS</span><span>V0.1</span></div></footer>
-  </main>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LBVpn</title>
+        <link rel="stylesheet" href="popup.css" />
+        <script src="popup.js" defer></script>
+    </head>
+    <body>
+        <main class="panel">
+            <header>
+                <a class="brand" href="#" aria-label="LBVpn home">LB<span>Vpn</span></a><span class="edition">PRIVATE ACCESS</span>
+            </header>
+            <section class="connection" aria-labelledby="status">
+                <div class="orbit" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <path d="M24 5 39 11v12c0 10-15 19-15 19S9 33 9 23V11L24 5Z" />
+                        <path d="M18 23v-4a6 6 0 0 1 12 0v4M17 23h14v10H17z" />
+                    </svg>
+                </div>
+                <p class="eyebrow">YOUR CONNECTION</p>
+                <h1 id="status" role="status" aria-live="polite">Disconnected</h1>
+                <p class="description" id="description">A quieter corner of the internet.</p>
+            </section>
+            <section class="location">
+                <label id="location-label" for="location">EXIT LOCATION <span>03 AVAILABLE</span></label>
+                <div class="select-wrap">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg>
+                    <button id="location" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="locations" aria-labelledby="location-label location-value"><span id="location-value">Germany</span></button>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                    <div id="locations" class="location-menu" role="listbox" aria-labelledby="location-label" hidden>
+                        <button type="button" role="option" aria-selected="true" tabindex="-1">Germany</button>
+                        <button type="button" role="option" aria-selected="false" tabindex="-1">Netherlands</button>
+                        <button type="button" role="option" aria-selected="false" tabindex="-1">United States</button>
+                    </div>
+                </div>
+            </section>
+            <button id="connect" type="button">
+                <span id="button-label">Connect</span
+                ><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M12 3v8m-5-6a8 8 0 1 0 10 0" /></svg>
+            </button>
+            <footer>
+                <span class="demo-label">INTERACTIVE PREVIEW</span>
+                <p>Demo mode — browser traffic is not protected</p>
+                <div class="footer-line"><span>LBVPN / EARLY ACCESS</span><span>V0.1</span></div>
+            </footer>
+        </main>
+    </body>
 </html>
