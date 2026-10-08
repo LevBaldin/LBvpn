@@ -1,12 +1,16 @@
 # LBvpn
 
-Проект VPN-приложения. Разработка находится на начальном этапе.
+A VPN application project in the early stages of development.
 
-## Ветки
+## Branches
 
-- `main` — основная ветка проекта.
-- `dev` — текущая разработка.
+- `main` - the main project branch.
+- `dev` - ongoing development.
 
-## Конфигурация
+## Configuration
 
-Не добавляйте в репозиторий приватные ключи, пароли и рабочие VPN-конфигурации.
+Do not commit private keys, passwords, or active VPN configurations.
+
+## Language
+
+All repository content, code comments, commit messages, and pull request descriptions must be written in English.
